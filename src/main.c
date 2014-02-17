@@ -17,12 +17,12 @@
 
 /* The rate at which data is sent to the queue, specified in milliseconds, and
 converted to ticks using the portTICK_RATE_MS constant. */
-#define mainQUEUE_SEND_FREQUENCY_MS			( 1000 / portTICK_RATE_MS )
+#define mainQUEUE_SEND_FREQUENCY_MS			(500 / portTICK_RATE_MS)
 
 /* The number of items the queue can hold.  This is 1 as the receive task
 will remove items as they are added, meaning the send task should always find
 the queue empty. */
-#define mainQUEUE_LENGTH					( 1 )
+#define mainQUEUE_LENGTH					(1)
 
 
 /* ----- LED definitions --------------------------------------------------- */
@@ -36,19 +36,19 @@ the queue empty. */
 /*
  * Setup the NVIC, LED outputs, and button inputs.
  */
-static void prvSetupHardware( void );
+static void prvSetupHardware(void);
 
 /*
  * The tasks as described in the comments at the top of this file.
  */
-static void prvQueueReceiveTask( void *pvParameters );
-static void prvQueueSendTask( void *pvParameters );
+static void prvQueueReceiveTask(void *pvParameters);
+static void prvQueueSendTask(void *pvParameters);
 
 /*
  * The LED timer callback function.  This does nothing but switch the red LED
  * off.
  */
-static void vLEDTimerCallback( xTimerHandle xTimer );
+static void vLEDTimerCallback(xTimerHandle xTimer);
 
 /*-----------------------------------------------------------*/
 
@@ -93,7 +93,7 @@ int main()
 		xLEDTimer = xTimerCreate((const signed char *) "LEDTimer", /* A text name, purely to help debugging. */
 								(5000 / portTICK_RATE_MS),			/* The timer period, in this case 5000ms (5s). */
 								pdFALSE,							/* This is a one shot timer, so xAutoReload is set to pdFALSE. */
-								(void*) 0,							/* The ID is not used, so can be set to anything. */
+								(void *) 0,							/* The ID is not used, so can be set to anything. */
 								vLEDTimerCallback					/* The callback function that switches the LED off. */
 								);
 
@@ -111,7 +111,7 @@ int main()
 
 /*-----------------------------------------------------------*/
 
-static void vLEDTimerCallback( xTimerHandle xTimer )
+static void vLEDTimerCallback(xTimerHandle xTimer)
 {
 	/* The timer has expired - so no button pushes have occurred in the last
 	five seconds - turn the LEDs off.  NOTE - accessing the LED port should use
@@ -123,7 +123,7 @@ static void vLEDTimerCallback( xTimerHandle xTimer )
 
 /*-----------------------------------------------------------*/
 
-static void prvQueueSendTask( void *pvParameters )
+static void prvQueueSendTask(void *pvParameters)
 {
 	portTickType xNextWakeTime;
 	const unsigned long ulValueToSend = 100UL;
@@ -148,7 +148,7 @@ static void prvQueueSendTask( void *pvParameters )
 }
 /*-----------------------------------------------------------*/
 
-static void prvQueueReceiveTask( void *pvParameters )
+static void prvQueueReceiveTask(void *pvParameters)
 {
 	unsigned long ulReceivedValue;
 
@@ -173,7 +173,7 @@ static void prvQueueReceiveTask( void *pvParameters )
 }
 /*-----------------------------------------------------------*/
 
-static void prvSetupHardware( void )
+static void prvSetupHardware(void)
 {
 	/* Ensure that all 4 interrupt priority bits are used as the pre-emption priority. */
 	NVIC_PriorityGroupConfig( NVIC_PriorityGroup_4 );
@@ -192,7 +192,7 @@ static void prvSetupHardware( void )
 }
 /*-----------------------------------------------------------*/
 
-void vApplicationMallocFailedHook( void )
+void vApplicationMallocFailedHook(void)
 {
 	/* Called if a call to pvPortMalloc() fails because there is insufficient
 	free memory available in the FreeRTOS heap.  pvPortMalloc() is called
@@ -203,28 +203,28 @@ void vApplicationMallocFailedHook( void )
 }
 /*-----------------------------------------------------------*/
 
-void vApplicationStackOverflowHook( xTaskHandle pxTask, signed char *pcTaskName )
+void vApplicationStackOverflowHook(xTaskHandle pxTask, signed char *pcTaskName)
 {
-	( void ) pcTaskName;
-	( void ) pxTask;
+	(void) pcTaskName;
+	(void) pxTask;
 
 	/* Run time stack overflow checking is performed if
 	configconfigCHECK_FOR_STACK_OVERFLOW is defined to 1 or 2.  This hook
 	function is called if a stack overflow is detected. */
-	for( ;; );
+	while (1);
 }
 /*-----------------------------------------------------------*/
 
-void vApplicationIdleHook( void )
+void vApplicationIdleHook(void)
 {
-volatile size_t xFreeStackSpace;
+	volatile size_t xFreeStackSpace;
 
 	/* This function is called on each cycle of the idle task.  In this case it
 	does nothing useful, other than report the amount of FreeRTOS heap that
 	remains unallocated. */
 	xFreeStackSpace = xPortGetFreeHeapSize();
 
-	if( xFreeStackSpace > 100 )
+	if (xFreeStackSpace > 100)
 	{
 		/* By now, the kernel has allocated everything it is going to, so
 		if there is a lot of heap remaining unallocated then
@@ -251,7 +251,7 @@ void HardFault_Handler(void)
     );
 }
 
-void prvGetRegistersFromStack( uint32_t *pulFaultStackAddress )
+void prvGetRegistersFromStack(uint32_t *pulFaultStackAddress)
 {
 	/* These are volatile to try and prevent the compiler/linker optimising them
 	away as the variables never actually get used.  If the debugger won't show the

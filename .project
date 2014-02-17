@@ -30,19 +30,9 @@
 			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/croutine.c</locationURI>
 		</link>
 		<link>
-			<name>libs/FreeRTOS/include</name>
-			<type>2</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include</locationURI>
-		</link>
-		<link>
 			<name>libs/FreeRTOS/list.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/list.c</locationURI>
-		</link>
-		<link>
-			<name>libs/FreeRTOS/portable</name>
-			<type>2</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/portable</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/queue.c</name>
@@ -63,6 +53,81 @@
 			<name>libs/FreeRTOS/timers.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/timers.c</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/include/FreeRTOS.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/FreeRTOS.h</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/include/StackMacros.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/StackMacros.h</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/include/croutine.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/croutine.h</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/include/list.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/list.h</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/include/mpu_wrappers.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/mpu_wrappers.h</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/include/portable.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/portable.h</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/include/projdefs.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/projdefs.h</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/include/queue.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/queue.h</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/include/semphr.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/semphr.h</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/include/task.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/task.h</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/include/timers.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/timers.h</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/portable/readme.txt</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/portable/readme.txt</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/portable/MemMang/heap_1.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/portable/MemMang/heap_1.c</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/portable/GCC/ARM_CM3/port.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/portable/GCC/ARM_CM3/portmacro.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
