@@ -63,15 +63,6 @@
     1 tab == 4 spaces!
 */
 
-
-/* The following #error directive is to remind users that a batch file must be
- * executed prior to this project being built.  The batch file *cannot* be 
- * executed from within CCS4!  Once it has been executed, re-open or refresh 
- * the CCS4 project and remove the #error line below.
- */
-//#error Ensure CreateProjectDirectoryStructure.bat has been executed before building.  See comment immediately above.
-
-
 #ifndef FREERTOS_CONFIG_H
 #define FREERTOS_CONFIG_H
 
@@ -98,7 +89,7 @@
 #define configMAX_PRIORITIES			( ( unsigned portBASE_TYPE ) 5 )
 #define configMINIMAL_STACK_SIZE		( ( unsigned short ) 70 )
 #define configTOTAL_HEAP_SIZE			( ( size_t ) ( 7 * 1024 ) )
-#define configMAX_TASK_NAME_LEN			( 10 )
+#define configMAX_TASK_NAME_LEN			( 16 )
 #define configUSE_TRACE_FACILITY		0
 #define configUSE_16_BIT_TICKS			0
 #define configIDLE_SHOULD_YIELD			1
@@ -112,7 +103,7 @@
 #define configUSE_COUNTING_SEMAPHORES	0
 
 /* Co-routine definitions. */
-#define configUSE_CO_ROUTINES 		0
+#define configUSE_CO_ROUTINES 			0
 #define configMAX_CO_ROUTINE_PRIORITIES ( 2 )
 
 /* Software timer definitions. */
