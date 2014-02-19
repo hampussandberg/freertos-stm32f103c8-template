@@ -30,7 +30,7 @@ int main()
 
 	/* Create the tasks */
 	xTaskCreate(prvBlinkTask,					/* Pointer to the task entry function */
-				(signed char *) "Blink",		/* Name for the task */
+				"Blink",						/* Name for the task */
 				configMINIMAL_STACK_SIZE,		/* The size of the stack */
 				NULL,							/* Pointer to parameters for the task */
 				mainBLINK_TASK_PRIORITY,		/* The priority for the task */

@@ -27,107 +27,117 @@
 		<link>
 			<name>libs/FreeRTOS/croutine.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/croutine.c</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/croutine.c</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/event_groups.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/event_groups.c</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/list.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/list.c</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/list.c</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/queue.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/queue.c</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/queue.c</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/readme.txt</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/readme.txt</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/readme.txt</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/tasks.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/tasks.c</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/tasks.c</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/timers.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/timers.c</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/timers.c</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/include/FreeRTOS.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/FreeRTOS.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/include/FreeRTOS.h</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/include/StackMacros.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/StackMacros.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/include/StackMacros.h</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/include/croutine.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/croutine.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/include/croutine.h</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/include/event_groups.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/include/event_groups.h</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/include/list.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/list.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/include/list.h</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/include/mpu_wrappers.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/mpu_wrappers.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/include/mpu_wrappers.h</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/include/portable.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/portable.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/include/portable.h</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/include/projdefs.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/projdefs.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/include/projdefs.h</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/include/queue.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/queue.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/include/queue.h</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/include/semphr.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/semphr.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/include/semphr.h</locationURI>
+		</link>
+		<link>
+			<name>libs/FreeRTOS/include/stdint.readme</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/include/stdint.readme</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/include/task.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/task.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/include/task.h</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/include/timers.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/include/timers.h</locationURI>
-		</link>
-		<link>
-			<name>libs/FreeRTOS/portable/readme.txt</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/portable/readme.txt</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/include/timers.h</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/portable/MemMang/heap_1.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/portable/MemMang/heap_1.c</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/portable/MemMang/heap_1.c</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/portable/GCC/ARM_CM3/port.c</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/portable/GCC/ARM_CM3/port.c</locationURI>
 		</link>
 		<link>
 			<name>libs/FreeRTOS/portable/GCC/ARM_CM3/portmacro.h</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/FreeRTOS/FreeRTOSV8.0.0/Source/portable/GCC/ARM_CM3/portmacro.h</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
