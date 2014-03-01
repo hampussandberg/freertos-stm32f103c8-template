@@ -1,3 +1,8 @@
+/*
+ * FreeRTOS Coding Standard and Style Guide:
+ * http://www.freertos.org/FreeRTOS-Coding-Standard-and-Style-Guide.html
+ */
+
 /* Kernel includes. */
 #include "FreeRTOS.h"
 #include "task.h"
@@ -50,32 +55,6 @@ int main()
 /*-----------------------------------------------------------*/
 static void prvBlinkTask(void *pvParameters)
 {
-	/* The parameter in vTaskDelayUntil is the absolute time
-	 * in ticks at which you want to be woken calculated as
-	 * an increment from the time you were last woken. */
-	portTickType xNextWakeTime;
-	/* Initialize xNextWakeTime - this only needs to be done once. */
-	xNextWakeTime = xTaskGetTickCount();
-
-	while (1)
-	{
-		/* LED on for 25 ms */
-		GPIO_ResetBits(GPIOA, mainLED_1);
-		vTaskDelayUntil(&xNextWakeTime, 25 / portTICK_RATE_MS);
-
-		/* LED off for 1000 ms */
-		GPIO_SetBits(GPIOA, mainLED_1);
-		vTaskDelayUntil(&xNextWakeTime, 1000 / portTICK_RATE_MS);
-	}
-}
-
-/*-----------------------------------------------------------*/
-
-static void prvSetupHardware(void)
-{
-	/* Ensure that all 4 interrupt priority bits are used as the pre-emption priority. */
-	NVIC_PriorityGroupConfig( NVIC_PriorityGroup_4 );
-
 	/* Set up the LED outputs */
 	// Enable clock for GPIOA
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
@@ -87,6 +66,32 @@ static void prvSetupHardware(void)
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 
 	GPIO_SetBits(GPIOA, mainLED_1 | mainLED_2 | mainLED_3);
+
+	/* The parameter in vTaskDelayUntil is the absolute time
+	 * in ticks at which you want to be woken calculated as
+	 * an increment from the time you were last woken. */
+	TickType_t xNextWakeTime;
+	/* Initialize xNextWakeTime - this only needs to be done once. */
+	xNextWakeTime = xTaskGetTickCount();
+
+	while (1)
+	{
+		/* LED on for 25 ms */
+		GPIO_ResetBits(GPIOA, mainLED_1);
+		vTaskDelayUntil(&xNextWakeTime, 25 / portTICK_PERIOD_MS);
+
+		/* LED off for 1000 ms */
+		GPIO_SetBits(GPIOA, mainLED_1);
+		vTaskDelayUntil(&xNextWakeTime, 1000 / portTICK_PERIOD_MS);
+	}
+}
+
+/*-----------------------------------------------------------*/
+
+static void prvSetupHardware(void)
+{
+	/* Ensure that all 4 interrupt priority bits are used as the pre-emption priority. */
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);
 }
 /*-----------------------------------------------------------*/
 
