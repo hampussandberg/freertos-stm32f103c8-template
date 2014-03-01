@@ -10,8 +10,9 @@ Download [FreeRTOS](http://www.freertos.org/) and place it in the workspace fold
 <pre>
 workspace
 +-- FreeRTOS
-|	+-- Source
-|		+-- All files
+|	+-- FreeRTOSVx.x.x
+|	|	+-- Source
+|	|		+-- All files
 +-- freertos-stm32f103c8-template
 |	+-- include
 |	+-- ldscripts
